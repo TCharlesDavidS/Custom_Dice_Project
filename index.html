@@ -5,28 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Quattrocento&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/021dfa6d59.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
-  <main class="flex-column">
-  <h1>Custom Dice App</h1>
-    <div class="flex">
-      <input type="text" id="newItem" placeholder="New item...">
-      <button id="addItem">Add Item</button>
+  <main class="flex">
+  
+<div class="left" id="outputRandomItem">
+  <h1 class="title disable-select">ROLL <br> THE <br> DICE</h1>
+  
+</div>
+   
+    
+    
+    <div class="flex-column right">
+      
+       
+        
+    <div class="flex" style="margin-top: 1.7em;">
+      <div class="flex">
+        <input type="text" id="newItem" class="text" placeholder="New item . . .">
+        <button id="addItem" ><i class="fa-solid fa-plus"></i></button> 
+        <div><button id="removeItem"><i class="fa-solid fa-minus"></i></button></div>
+        <div><button id="removeAllItems"><i class="fa-solid fa-trash"></i></button></div>
+      </div>
       
     </div>
-    <div id="itemList"></div>
-    
-    
-    <div class="flex">
-      <div><button id="removeItem">Remove Last Item</button></div>
-      <div><button id="removeAllItems">Remove All Items</button></div>
-      <div>
-        <button id="outputRandomItem">Output Random Item</button>
-      </div>
-    </div>
-    <h2 id="randomOutput"></h2>
+  
+   <div id="itemList" class="text" style="margin-top: 2em;"></div>
+
+    <div style="margin-top: auto; margin-bottom: 4em;">
+  <div class="flex">
+    <div id="randomItemIcon"></div> 
+    <h2 id="randomOutput" class="title_2" ></h2>
+  </div>
+  </div>
+  </div>
+ 
   </main>
     
     <script src="script.js"></script>
